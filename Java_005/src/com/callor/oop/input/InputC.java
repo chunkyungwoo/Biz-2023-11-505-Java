@@ -15,7 +15,7 @@ import java.util.Scanner;
  * 이때 Interger.valueOf(), Float.ValueOf(), Ling.valueOf(), Double.valueOf()등
  * method 를 사용하여 문자열형 숫자를 실제 숫자로 변환한다
  * 
- * Integer.parseint(),Float.parsefloat(),
+ * Integer.parseInt(),Float.parseFloat(),
  * Long.parseLong() , Double.parseDouble() 등의 method 도 있다
  */
 public class InputC {
