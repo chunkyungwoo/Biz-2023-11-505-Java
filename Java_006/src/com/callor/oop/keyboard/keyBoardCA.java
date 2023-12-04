@@ -6,10 +6,10 @@ public class keyBoardCA {
 	
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
 		while(true) {
+		Scanner scan = new Scanner(System.in);
 		int rndNum = (int)(Math.random()* 50)+ 1;
-		int count = 0;
+		int count = 1;
 		
 		System.out.println("=".repeat(50));
 		System.out.println("숫자 맞추기 게임");
@@ -54,17 +54,12 @@ public class keyBoardCA {
 			System.out.println("다시 한번 잘 생각해보세요. ");
 		}while(true) {
 			System.out.print("X 또는 O ");
-			String str = scan.nextLine();
-			if(str.equals("O")) {
-				break;
-				
-			}if(str.equals("X")) {
-				System.out.println("종료합니다. ");
-				return;
-			}
+			System.out.println("");
+			break;
 		}
-		
+		System.out.println("GAME OVER!!");
 		continue;
+	
 		
 	}
 	}
