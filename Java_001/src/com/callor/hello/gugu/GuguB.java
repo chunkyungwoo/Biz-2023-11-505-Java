@@ -25,6 +25,19 @@ public class GuguB {
 			System.out.println(num * index);
 						
 		}
+		System.out.println("=======================");
+		
+		num = 9;
+		
+		for(index = 1; index < 10; index++) {
+			System.out.print(num);
+			System.out.print(" x ");
+			System.out.print(index);
+			System.out.print(" = ");
+			System.out.println(num * index);
+			
+		}
+		System.out.println("==========================");
 		
 	}
 }

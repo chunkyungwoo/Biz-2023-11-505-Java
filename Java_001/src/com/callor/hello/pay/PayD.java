@@ -4,7 +4,7 @@ public class PayD {
 	public static void main(String[] args) {
 		int pay = 3587960;
 		
-		int note50000  = pay / 5000;
+		int note50000  = pay / 50000;
 		pay = pay % 50000;
 		
 		int note10000 = pay / 10000;
@@ -16,6 +16,7 @@ public class PayD {
 		
 		System.out.println("====================");
 		System.out.println("5 만원권 : " + pay / 50000);
+		pay = pay % 50000;
 		
 	}
 
