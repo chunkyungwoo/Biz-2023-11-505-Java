@@ -11,10 +11,10 @@ public class ArraysAA {
 		
 		int index = 1;
 		System.out.printf("%d 번째 값 : %d\n", index++,num1);
-		System.out.printf("%d 번째 값 : %d\n", index++,num1);
-		System.out.printf("%d 번째 값 : %d\n", index++,num1);
-		System.out.printf("%d 번째 값 : %d\n", index++,num1);
-		System.out.printf("%d 번째 값 : %d\n", index++,num1);
+		System.out.printf("%d 번째 값 : %d\n", index++,num2);
+		System.out.printf("%d 번째 값 : %d\n", index++,num3);
+		System.out.printf("%d 번째 값 : %d\n", index++,num4);
+		System.out.printf("%d 번째 값 : %d\n", index++,num5);
 		
 		int sum = num1;
 		sum += num2;
