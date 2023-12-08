@@ -1,15 +1,14 @@
-package com.callor.score.exec;
+package com.callor.score;
 
 import com.callor.score.service.ScoreService;
 
-public class ScoreEA {
+public class ScoreA {
 	
 	public static void main(String[] args) {
 		ScoreService scoreService = new ScoreService();
+		scoreService.inputScore();
+		scoreService.printScore();
 		
-//		for(int i = 0; i < 100; i++) {
-			scoreService.inputScore(0,100);
-//		}
 	}
 
 }
