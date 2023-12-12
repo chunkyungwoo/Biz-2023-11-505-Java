@@ -1,4 +1,4 @@
-package com.callor.student.exec;
+package com.callor.student.models;
 
 /*
  * 학번 ,이름,학과,학년,전화번호,주소를 포함하는

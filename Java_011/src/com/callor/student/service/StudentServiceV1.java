@@ -2,7 +2,7 @@ package com.callor.student.service;
 
 import java.util.Scanner;
 
-import com.callor.student.exec.StudentDto;
+import com.callor.student.models.StudentDto;
 
 public class StudentServiceV1 {
 

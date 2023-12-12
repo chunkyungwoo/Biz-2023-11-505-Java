@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import com.callor.student.exec.StudentDto;
+import com.callor.student.models.StudentDto;
 
 public class StudentServiceV2A {
 	
