@@ -3,6 +3,9 @@ package com.callor.score.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.callor.score.model.ScoreDto;
+import com.callor.score.utils.Line;
+
 public class ScoreService {
 	int sumKor;
 	int sumEng;
@@ -56,13 +59,13 @@ public class ScoreService {
 			sumMusic += scoreMusic;
 			sumArt += scoreArt;
 			sumTotal = sumKor + sumEng + sumMath + sumMusic + sumArt;
-			AvgKor = (float)sumKor / 10;
-			AvgEng = (float)sumEng / 10;
-			AvgMath = (float)sumMath / 10;
-			AvgMusic = (float)sumMusic / 10;
-			AvgArt = (float)sumArt / 10;
 			scores.add(scoreDto);
 		}
+		AvgKor = (float)sumKor / 10;
+		AvgEng = (float)sumEng / 10;
+		AvgMath = (float)sumMath / 10;
+		AvgMusic = (float)sumMusic / 10;
+		AvgArt = (float)sumArt / 10;
 		sumAvg = (AvgKor + AvgEng + AvgMath + AvgMusic + AvgArt) /5;
 	}
 	public void printScore() {

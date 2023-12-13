@@ -10,6 +10,12 @@ public class StartServiceImplV2 extends StartServiceImplV1{
 		// V1 의 생성자를 호출하여 V1 생성자에서 진행한
 		// 코드를 그대로 실행하겠다 super 는 항상 맨처음에 있어야한다
 		super();
+		
+		// ImplV1 에서는 st..ServiceImplV1() 을 사용하여
+		// stService 를 초기화 하였다
+		// 하지만 여기에서는 ImplV2를 사용하고 싶다
+		// 그럴때는 다시 stService 를 ImplV2로 초기화를 하면된다.
+		// stService = new StudentServiceimplV2();
 	}
 	@Override
 	public void mainMenu() {
@@ -56,16 +62,19 @@ public class StartServiceImplV2 extends StartServiceImplV1{
 		while(true) {
 			Integer selectMenu = this.selectMenu();
 			if(selectMenu == null) break;
-			else if(selectMenu == 1) {
-				System.out.println("학생정보 입력");
-			}else if(selectMenu == 2) {
+			else if(selectMenu == MenuIndex.학생정보_입력.getIndex()) {
+				// System.out.println("학생정보 입력");
+				stService.inputStudents();
+			}else if(selectMenu == MenuIndex.학생정보_조회.getIndex()) {
 				System.out.println("학생정보 조회");
-			}else if(selectMenu == 3) {
+			}else if(selectMenu == MenuIndex.학생정보_가져오기.getIndex()) {
 				System.out.println("학생정보 가져오기");
-			}else if(selectMenu == 4) {
-				System.out.println("학생정보 출력");
+			}else if(selectMenu == MenuIndex.학생정보_출력.getIndex()) {
+				// System.out.println("학생정보 출력");
+				stService.printStudent();
 			}
 		}
+		System.out.println("업무 종료");
 	}
 
 }
