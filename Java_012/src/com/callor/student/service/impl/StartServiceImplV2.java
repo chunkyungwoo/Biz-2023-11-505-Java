@@ -1,15 +1,16 @@
 package com.callor.student.service.impl;
 
 import com.callor.student.models.MenuIndex;
+import com.callor.student.service.StudentService;
 import com.callor.student.utils.Line;
 
 public class StartServiceImplV2 extends StartServiceImplV1{
-	public StartServiceImplV2() {
+	public StartServiceImplV2(StudentService stService) {
 		// scan = new Scanner(System.in);
 		// super(); 란
 		// V1 의 생성자를 호출하여 V1 생성자에서 진행한
 		// 코드를 그대로 실행하겠다 super 는 항상 맨처음에 있어야한다
-		super();
+		super(stService);
 		
 		// ImplV1 에서는 st..ServiceImplV1() 을 사용하여
 		// stService 를 초기화 하였다
