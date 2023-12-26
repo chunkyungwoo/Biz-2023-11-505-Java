@@ -68,11 +68,13 @@ public class CardServiceImplV1 implements CardService{
 					if(deno.equals("A")) value = 1;
 					else value = 10;
 				}
-				if(value < 1) value = 10; {
-					cardDto.value = value;
-					
-					cardList.add(cardDto);
+				if(value < 1) {
+					value = 10;
+					cardDto.denomination = "10";
 				}// for deno
+				cardDto.value = value;
+				
+				cardList.add(cardDto);
 			}// for suit
 			
 			// 순서대로 배열된 cardList 의 각 요소를 뒤죽박죽 섞어주기
