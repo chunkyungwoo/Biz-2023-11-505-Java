@@ -42,6 +42,11 @@ public class StudentServiceImplV1 implements StudentService{
 		if(str.equals("QUIT")) {
 			return;
 		}
+		if(this.inputStudent(str) != null) {
+			System.out.println("* 데이터가 없습니다");
+		}else{
+			
+		}
 		
 		
 		
